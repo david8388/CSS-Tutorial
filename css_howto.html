@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- internal-style -->
+    <style>
+      body {
+        background-color: linen;
+      }
+
+      h1 {
+        color: maroon;
+        margin-left: 40px;
+      }
+    </style>
+    <!-- external-style -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <!-- if internal style is defined before the link to external style sheet, the background will be light blue 
+         css樣式會根據順序做調整-->
+  </head>
+  <body>
+    <!-- CSS順序 
+        1 Inline-style 
+        2 External and internal style 
+        3 browser default -->
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+    <h2 style="color:blue;text-align:center">This is h2</h2>
+    <p style="color:red">This is a red paragraph</p>
+  </body>
+</html>
