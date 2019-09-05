@@ -32,6 +32,56 @@
       p.hidden {
         border-style: hidden;
       }
+      p.one {
+        border-width: 5px;
+        border-style: solid;
+        border-color: red;
+      }
+      p.two {
+        border-width: medium;
+        border-style: double;
+        border-color: #00ff00;
+      }
+      p.three {
+        border-style: dotted;
+        border-width: 1px 3px 5px 8px;
+        /* 依序為上 右 下 左, 假如上下一致 以及 左右也一致,
+        e.g: border-width: 2px 10px 2px 10px 可以只寫border-width: 2px 10px
+        */
+        border-color: red blue green yellow;
+      }
+      p.four {
+        border-top-style: dotted;
+        border-right-style: solid;
+        border-bottom-style: double;
+        border-left-style: ridge;
+        /* 預設border-style就是預設上 右 下 左 都是一樣的style */
+      }
+      p.five {
+        border-style: double dashed dotted;
+        /* 只有三個值, 依序為上 => double, right left => dashed, bottom => dotted */
+      }
+      p.six {
+        border: solid 2px red;
+        /* border就代表 border-width, border-style(一定要填), border-color
+           border: solid 2px solid 似乎也可以work, 應該是會自動解析為width 還是 color
+        */
+      }
+      p.seven {
+        border-left-style: solid;
+        border-color: orangered;
+        border-width: 4px;
+        /* 上面等同於 border-left: 4px solid orangered */
+        background-color: lightgrey;
+      }
+      p.eight {
+        border-bottom: 4px solid red;
+        background-color: lightgrey;
+      }
+      p.nine {
+        border: 2px solid gray;
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
@@ -45,5 +95,14 @@
     <p class="outset">outset</p>
     <p class="none">none</p>
     <p class="hidden">hidden</p>
+    <p class="one">one</p>
+    <p class="two">two</p>
+    <p class="three">three</p>
+    <p class="four">four</p>
+    <p class="five">five</p>
+    <p class="six">six</p>
+    <p class="seven">seven</p>
+    <p class="eight">eight</p>
+    <p class="nine">nine</p>
   </body>
 </html>
