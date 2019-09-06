@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+      }
+      p.margin {
+        margin: 25px 50px 75px 100px;
+        /* margin 25px => margin-top, 50px => margin-right, 75px => margin-bottom, 100px => margin-left */
+      }
+      p.margin3 {
+        margin: 10px 5px 20px;
+        /* 10px => margin-top, 5px => margin-right margin-left, 20px => margin-bottom*/
+      }
+      p.margin2 {
+        margin: 20px 30px;
+        /* 20px => margin-top margin-bottom, 30px => margin-right margin-left*/
+      }
+      p.margin1 {
+        margin: 40px;
+        /* margin-top margin-bottom margin-right margin-left 都是40px*/
+      }
+      div {
+        width: 300px;
+        margin: auto;
+        /* auto代表在目前container裡水平置中*/
+        border: 1px solid red;
+      }
+      div.marginleft {
+        margin-left: 100px;
+        border: 1px solid blue;
+      }
+      p.ex1 {
+        margin-left: inherit;
+      }
+      h1 {
+        margin: 0 0 50px 0;
+      }
+      h2 {
+        margin: 20px 0 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>HALO</p>
+    <p class="margin">Margin</p>
+    <p class="margin1">Margin1</p>
+    <p class="margin2">Margin2</p>
+    <p class="margin3">Margin3</p>
+    <div>Use of margin:auto</div>
+    <div class="marginleft">
+      <p class="ex1">
+        This paragraph has an inherited left margin(margin left is inherited by
+        div(margin-left:100px) )
+      </p>
+    </div>
+    <h1>Heading 1(margin-bottom: 50px)</h1>
+    <h2>Heading 2(margin-top: 20px)</h2>
+    <span>
+      當一個下邊界及另一個上邊界的都有設定時，只會留下最大的那個，稱為邊界重疊(margin
+      collapsing),
+      https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+    </span>
+  </body>
+</html>
