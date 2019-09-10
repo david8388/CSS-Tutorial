@@ -1,0 +1,75 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <style>
+      div.p1 {
+        padding: 70px;
+        border: 1px solid red;
+      }
+      p {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        background-color: lightskyblue;
+      }
+      .padding {
+        padding: 25px 50px 75px 100px;
+        background-color: lightgrey;
+      }
+      .padding3 {
+        padding: 15px 30px 45px;
+        background-color: lightyellow;
+      }
+      .padding2 {
+        padding: 20px 40px;
+        background-color: maroon;
+      }
+      .padding1 {
+        padding: 25px;
+        background-color: green;
+      }
+      div.ex1 {
+        width: 300px;
+        padding: 25px;
+      }
+      div.ex3 {
+        width: 300px;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: navajowhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p1">This element has a padding of 70px</div>
+    <p>
+      This element has a top padding of 50px, a right padding of 30px, a bottom
+      padding of 50px, a left padding of 80px
+    </p>
+    <p class="padding">
+      style is padding:25px 50px 75px 100px, 25px => padding-top, 50px =>
+      padding-right, 75px => padding-bottom, 100px => padding-left
+    </p>
+    <p class="padding3">
+      padding: 15px 30px 45px, 15px => padding-top, 30px => padding-right
+      padding-left, 45px => padding-bottom
+    </p>
+    <p class="padding2">
+      padding:20px 40px, 20px => padding-top padding-bottom, 40px
+      =>padding-right padding-left
+    </p>
+    <p class="padding1">
+      padding:25px, 25px => padding-top padding-bottom padding-right
+      padding-left
+    </p>
+    <div class="ex1">
+      The width of this div is 350 width, the width set 300px, padding 25px, 300
+      + 50 padding(left=25,right=25)
+    </div>
+    <div class="ex3">
+      The width of this div remains at 300px, in spite of 50px of total left and
+      right padding, because of the box-sizing: border-box property.
+    </div>
+  </body>
+</html>
