@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.ex1 {
+        width: 300px;
+        padding: 50px;
+        border: 15px solid green;
+        margin: 20px;
+        background-color: lightgrey;
+      }
+      div.ex2 {
+        width: 350px;
+        background-color: peru;
+      }
+      div.ex3 {
+        width: 300px;
+        padding: 20px;
+        border: 5px solid grey;
+        margin: 0px;
+      }
+      div.ex4 {
+        height: 200px;
+        width: 50%;
+        background-color: royalblue;
+      }
+      div.ex5 {
+        height: 100px;
+        padding: 40px;
+        border: 10px solid red;
+        margin: 0;
+        width: 50%;
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ex1">The box model</div>
+    <div class="ex2">This element has a width of 350px</div>
+    <div class="ex3">
+      The total width of this element is also 350. (width:300px,
+      padding:20px(right + left = 40px), border:5px(right + left = 10px) 300 +
+      40 + 10)
+    </div>
+    <div style="display:flex">
+      <div class="ex4">The element has a height of 200px</div>
+      <div class="ex5">
+        The total height of this element is also 200px.(height:100px,
+        padding:40px(top + bottom = 80), border:10px(top + bottom =20), 100 + 80
+        + 20)
+      </div>
+    </div>
+  </body>
+</html>
