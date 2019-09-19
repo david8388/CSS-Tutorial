@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a.ex1:link {
+        color: red;
+        text-decoration: none;
+        background: yellow;
+      }
+      a.ex1:visited {
+        color: green;
+        text-decoration: none;
+        background: cyan;
+      }
+      a.ex1:hover {
+        color: hotpink;
+        text-decoration: underline;
+        background: lightgreen;
+      }
+      a.ex1:active {
+        color: blue;
+        text-decoration: underline;
+        background: hotpink;
+      }
+      a.ex2:link,
+      a.ex2.visited {
+        background: darkorange;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a.ex2:hover,
+      a.ex2:active {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b>
+        <a class="ex1" href="https://github.com/" target="_blank"
+          >This is a link</a
+        ></b
+      >
+    </p>
+    <p>
+      <b>
+        <a class="ex2" href="https://github.com" target="_blank">
+          This is also a link</a
+        >
+      </b>
+    </p>
+  </body>
+</html>
