@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul.a {
+        list-style-type: circle;
+      }
+      ul.b {
+        list-style-type: square;
+      }
+      ol.c {
+        list-style-type: upper-roman;
+      }
+      ol.d {
+        list-style-type: lower-alpha;
+      }
+      ul.e {
+        list-style-image: url("http://icons.iconarchive.com/icons/ampeross/qetto/16/icon-developer-icon.png");
+      }
+      ul.f {
+        list-style-type: circle;
+        list-style-position: outside;
+      }
+      ul.g {
+        list-style-type: square;
+        list-style-position: inside;
+      }
+      ul.h {
+        list-style: square inside
+          url("http://icons.iconarchive.com/icons/ampeross/qetto/16/icon-developer-icon.png");
+      }
+      ul.i {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ol.j {
+        background: #ff9999;
+        padding: 20px;
+      }
+      ul.k {
+        background: #3399ff;
+        padding: 20px;
+      }
+      ol.j li {
+        background: #ffe5e5;
+        padding: 5px;
+        margin-left: 35px;
+      }
+      ul.k li {
+        background: #cce5ff;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Example of unordered list:</p>
+    <ul class="a">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+    <ul class="b">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+    <p>Example of ordered list:</p>
+    <ol class="c">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ol>
+    <ol class="d">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ol>
+    <p>Example of unordered list with image</p>
+    <ul class="e">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+    <p>list style position:outside(default)</p>
+    <ul class="f">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+    <p>list style position:inside</p>
+    <ul class="g">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+    <p>
+      list style:square inside url(xxx) , square means list-style-type, inside
+      means list-style-position, url means list-style-image
+    </p>
+    <ul class="h">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+    <p>Remove default settings</p>
+    <ul class="i">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+    <p>Style lists with color</p>
+    <ol class="j">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ol>
+    <ul class="k">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Cola</li>
+    </ul>
+  </body>
+</html>
