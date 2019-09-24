@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table.a {
+        border-collapse: collapse;
+      }
+      table.a,
+      th.a,
+      td.a {
+        border: 1px solid red;
+      }
+      th.a,
+      td.a {
+        padding: 15px;
+      }
+      table.b {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      table.c {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table.c,
+      th.c,
+      td.c {
+        border: 1px solid pink;
+      }
+      th.c {
+        height: 50px;
+        text-align: left;
+      }
+      td.c {
+        height: 40px;
+        vertical-align: bottom;
+      }
+
+      table.d {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th.d,
+      td.d {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th.d {
+        background: #4caf50;
+        color: white;
+      }
+      tr.d:hover {
+        background: #f5f5f5;
+      }
+      tr.d:nth-child(even) {
+        background: #f2f2f2;
+      }
+      table.e {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      tr.e:nth-child(even) {
+        background: #f2f2f2;
+      }
+      th.e,
+      td.e {
+        text-align: right;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Add a border to a table:</h2>
+    <table class="a">
+      <tr>
+        <th class="a">First Name</th>
+        <th class="a">Last Name</th>
+      </tr>
+      <tr>
+        <td class="a">Perter</td>
+        <td class="a">Griffin</td>
+      </tr>
+      <tr>
+        <td class="a">Louis</td>
+        <td class="a">Griffin</td>
+      </tr>
+    </table>
+
+    <h2>Single border around the table</h2>
+    <table class="b">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>Alex</td>
+        <td>Lee</td>
+      </tr>
+      <tr>
+        <td>May</td>
+        <td>Lee</td>
+      </tr>
+    </table>
+
+    <h2>The width and height properties</h2>
+    <table class="c">
+      <tr>
+        <th class="c">First Name</th>
+        <th class="c">Last Name</th>
+        <th class="c">Savings</th>
+      </tr>
+      <tr>
+        <td class="c">Alex</td>
+        <td class="c">Lee</td>
+        <td class="c">$100</td>
+      </tr>
+      <tr>
+        <td class="c">May</td>
+        <td class="c">Lee</td>
+        <td class="c">$100</td>
+      </tr>
+    </table>
+
+    <h2>bordered table dividers</h2>
+    <table class="d">
+      <tr class="d">
+        <th class="d">First Name</th>
+        <th class="d">Last Name</th>
+        <th class="d">Savings</th>
+      </tr>
+      <tr class="d">
+        <td class="d">Peter</td>
+        <td class="d">Griffin</td>
+        <td class="d">$150</td>
+      </tr>
+      <tr class="d">
+        <td class="d">Louis</td>
+        <td class="d">Griffin</td>
+        <td class="d">$200</td>
+      </tr>
+      <tr class="d">
+        <td class="d">Zach</td>
+        <td class="d">Griffin</td>
+        <td class="d">$300</td>
+      </tr>
+    </table>
+
+    <h2>Reponsive Table(overflow-x:auto)</h2>
+    <div style="overflow-x:auto">
+      <table class="e">
+        <tr class="e">
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+          <th class="e">First Name</th>
+          <th class="e">Last Name</th>
+          <th class="e">Savings</th>
+        </tr>
+        <tr class="e">
+          <td class="e">Peter</td>
+          <td class="e">Griffin</td>
+          <td class="e">$150</td>
+        </tr>
+        <tr class="e">
+          <td class="e">Louis</td>
+          <td class="e">Griffin</td>
+          <td class="e">$200</td>
+        </tr>
+        <tr class="e">
+          <td class="e">Zach</td>
+          <td class="e">Griffin</td>
+          <td class="e">$300</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
