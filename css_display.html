@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      li.a {
+        display: inline;
+      }
+      span.a {
+        display: block;
+      }
+      a.a {
+        display: block;
+      }
+      div.a {
+        display: none;
+      }
+      h1.b {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Display a list of links as a horizontal menu:</div>
+    <ul>
+      <li class="a">
+        <a href="https://translate.google.com.tw/?hl=zh-TW">Google翻譯</a>
+      </li>
+      <li class="a">
+        <a href="https://tw.dictionary.search.yahoo.com/">Yahoo字典</a>
+      </li>
+    </ul>
+    <span class="a">A display property with a value of block result in</span>
+    <span class="a">a line break between the two elements</span>
+    <div>Display links as block element:</div>
+    <a class="a" href="https://translate.google.com.tw/?hl=zh-TW">Google翻譯</a>
+    <a class="a" href="https://tw.dictionary.search.yahoo.com/">Yahoo字典</a>
+    <div style="display:inline">
+      <div class="a">This is a hidden div</div>
+      <div>
+        This is a visible div(The left div is a hidden div, but doesnt take up
+        any space)
+      </div>
+      <p style="color:red">
+        Notice that the div element with display:none; does not take up any
+        space
+      </p>
+    </div>
+
+    <div style="display:inline">
+      <h1>
+        This is a visible heading(The following div has h1 element with
+        visibility:hidden)
+      </h1>
+      <h1 class="b">This is a hidden heading</h1>
+      <p style="color:red">
+        Notice that the hidden heading still take up space.
+      </p>
+    </div>
+  </body>
+</html>
