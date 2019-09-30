@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.static {
+        position: static;
+        border: 3px solid #73ad21;
+      }
+      div.relative {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73ad21;
+      }
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73ad21;
+      }
+      div.relative2 {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+      }
+      div.sticky {
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background: #cae8ca;
+        border: 2px solid #4caf50;
+      }
+      img {
+        position: absolute;
+        left: 0px;
+        z-index: -1;
+      }
+      .container {
+        position: relative;
+      }
+      div.topleft {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 15px;
+      }
+      div.topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 15px;
+      }
+      div.center {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+      }
+      div.bottomleft {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-size: 15px;
+      }
+      div.bottomright {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Position: static, static position elements are not affected by the top,
+      left, bottom and right
+    </h2>
+    <div class="static">This div element has position:static</div>
+    <h2>
+      Position:relative, An element with position: relative; is positioned
+      relative to its normal position
+    </h2>
+    <div class="relative">This div element has position: relative</div>
+    <h2>
+      Position:fixed, An element with position:fixed; is positioned relative to
+      the viewport, which means it always stays in the same place even if the
+      page is scrolled
+    </h2>
+    <div class="fixed">This div element has position: fixed</div>
+    <h2>
+      Position:absolute, An element with position:absolute; is positioned
+      relative to the nearest position ancestor
+    </h2>
+    <div class="relative2">
+      This div element has position:relative
+      <div class="absolute">This div element has position:absolute</div>
+    </div>
+    <h2>
+      Try to <b>scroll</b> inside this frame to understand how sticky position
+      works
+    </h2>
+    <div class="sticky">I am sticky.</div>
+    <div style="padding-bottom:2000px">
+      <p>
+        In this example, the sticky element sticks to the top of the page (top:
+        0), when you reach its scroll position.
+      </p>
+      <p>Scroll back up to remove the stickyness.</p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+    </div>
+
+    <h2>This is a heading</h2>
+    <img
+      width="150px"
+      height="150px"
+      src="https://upload.wikimedia.org/wikipedia/zh/thumb/4/40/Cpbl-stast-chinatrust-brothers.png/220px-Cpbl-stast-chinatrust-brothers.png"
+    />
+    <p>
+      Because the image has a z-index of -1, it will be place behind the text
+    </p>
+
+    <h2>Image text</h2>
+    <div class="container">
+      <img
+        width="100%"
+        height="auto"
+        opacity="0.3"
+        src="https://img.sportsv.net/img/article/cover/5/53445/fit-Cm6dSBet9m-1200x628.jpg"
+      />
+      <div class="topleft">Top Left</div>
+      <div class="topright">Top Right</div>
+      <div class="center">Centered</div>
+      <div class="bottomleft">Bottom Left</div>
+      <div class="bottomright">Bottom Right</div>
+    </div>
+  </body>
+</html>
