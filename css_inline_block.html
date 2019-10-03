@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      span.a {
+        display: inline;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background: yellow;
+      }
+      span.b {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background: yellow;
+      }
+      span.c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background: yellow;
+      }
+      .nav {
+        background: yellow;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .nav li {
+        display: inline-block;
+        font-size: 15px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display:inline(inline can not set width, height)</h1>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida
+      nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
+    <h1>
+      Display:inline-block(allow to set a width and height on the element)
+    </h1>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida
+      nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
+    <h1>Display:block(Add a line-break after the element)</h1>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida
+      nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
+
+    <h1>Horizontal Navigation Links</h1>
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </body>
+</html>
