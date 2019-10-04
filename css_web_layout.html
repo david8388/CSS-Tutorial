@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header,
+      .footer {
+        background: grey;
+        color: white;
+        padding: 15px;
+      }
+      .column {
+        float: left;
+        padding: 15px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .content {
+        width: 75%;
+      }
+      .menu {
+        width: 25%;
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background: #33b5e5;
+        color: #fff;
+      }
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Chania</h1>
+    </div>
+
+    <div class="clearfix borderbox">
+      <div class="column menu borderbox">
+        <ul class="borderbox">
+          <li class="borderbox">The Flight</li>
+          <li class="borderbox">The City</li>
+          <li class="borderbox">The Island</li>
+          <li class="borderbox">The Food</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Footer Text</p>
+    </div>
+  </body>
+</html>
