@@ -24,6 +24,21 @@
         border: 3px solid #73ad21;
         padding: 10px;
       }
+      .rightfloat {
+        float: right;
+        width: 300px;
+        border: 3px solid #73ad21;
+        padding: 10px;
+      }
+      .centerpadding {
+        padding: 70px 0;
+        border: 3px solid green;
+      }
+      .verticalHorizontalcenter {
+        padding: 70px 0;
+        border: 3px solid green;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -51,13 +66,30 @@
         style="width:40%"
       />
     </div>
+
+    <h1>Center Vertically</h1>
+    <p>use the padding prop to center the div element veritcally</p>
+    <div class="centerpadding">
+      <p>I'm vertically centered.</p>
+    </div>
+    <h1>centering</h1>
+    <p>
+      use padding prop to center the div element vertically and horizontally
+    </p>
+    <div class="verticalHorizontalcenter">
+      <p>I'm vertically and horizontally centered.</p>
+    </div>
+
     <h1>Right Align</h1>
     <p>An example of how to right align elements with the position property:</p>
-    <div class="right">
-      <p>
-        In my younger and more vulnerable years my dad gave me some advice that
-        I've beening turning over in my mind ever since.
-      </p>
+    <div class="rightfloat">
+      In my younger and more vulnerable years my dad gave me some advice that
+      I've beening turning over in my mind ever since.
     </div>
+    <!-- <h1>Right Align(float:right)</h1>
+    <div class="rightfloat">
+      In my younger and more vulnerable years my dad gave me some advice that
+      I've beening turning over in my mind ever since.
+    </div> -->
   </body>
 </html>
